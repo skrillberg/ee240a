@@ -1,0 +1,61 @@
+;----------------------------------------------------------------------------
+; @(#)$CDS: assura version av4.1:Production:dfII6.1.5-64b:IC6.1.5-64b.500.17 08/31/15 04:19 (sjfql463) $
+; sub-version 4.1_USR4_HF25
+;----------------------------------------------------------------------------
+
+
+;----------------------------------------------------------------------------
+; avParameter Section
+; Created by the Assura RCX UI
+;----------------------------------------------------------------------------
+
+avParameters(
+	?workingDirectory "/home/aa/users/bkilberg/ee240/"
+	?runName "inverter"
+	?inputLayout ( "df2" "test" )
+	?cellName "inverter"
+	?viewName "layout"
+	?technology "gpdk090"
+	?techLib "/share/instsww/cadence/GPDK_PKG/gpdk090_v4.6/assura_tech.lib"
+)
+
+
+
+;----------------------------------------------------------------------------
+; rcxParameter Section
+; Created by the Assura RCX UI
+;----------------------------------------------------------------------------
+
+rcxParameters(
+	?outputFormat   "dfII"
+	?extractedView  "av_extracted"
+	?checkCellView	nil
+	?resistor	"presistor"
+	?resPropName	"r"
+	?capacitor	"pcapacitor"
+	?capPropName	"c"
+	?extract    "both"
+	?netNameSpace   "schematic"
+	?maxFractureLength  "infinite"
+	?fractureLengthUnits    "microns"
+	?temperature    25.0
+	?capExtractMode "decoupled"
+	?capGround  "gnd!"
+	?capCouplingFactor  1.0
+	?type   "full"
+	?rcxfsType  "none"
+	?minR  0.001
+	?maxMergedViaSize  "auto"
+	?arrayViasSpacing  "auto"
+	?powerNetsFile   "/home/aa/users/bkilberg/ee240/rcx.pwrNets.nets"
+	?groundNetsFile   "/home/aa/users/bkilberg/ee240/rcx.gndNets.nets"
+	?capModels  "no"
+	?parasiticCapModels  "no"
+	?resModels  "no"
+	?parasiticResModels  "comment"
+	?parasiticResWidth  nil
+	?parasiticResWidthDrawn  nil
+	?runName  "inverter"
+)
+setShellEnvVar("CDS_AUTO_CKOUT=all")
+avRCX()

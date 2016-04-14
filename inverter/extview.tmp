@@ -1,0 +1,67 @@
+*
+*
+*
+*                       LINUX           Sun Feb 28 16:28:52 2016
+*
+*
+*
+*  PROGRAM  advgen
+*
+*  HSPICE LIBRARY
+*
+*
+*
+.GLOBAL avC3 avC4
+*
+.SUBCKT inverter input output
+*
+*
+*  caps2d version: 10
+*
+*
+*       TRANSISTOR CARDS
+*
+*
+MavD1_1	output#2	input#3	avC3	avC3
++ nmos1v#20ivpcell#20gpdk090	L=0.12U	W=0.12U
++ AD=0.0696P	AS=0.0696P	PD=1.16U	PS=1.16U
++ simW=1.2e-07 fw=1.2e-07
+MavD7_1	output#5	input#2	avC4	avC4
++ pmos1v#20ivpcell#20gpdk090	L=0.12U	W=0.12U
++ AD=0.0696P	AS=0.0696P	PD=1.16U	PS=1.16U
++ simW=1.2e-07 fw=1.2e-07
+*
+*
+*       RESISTOR AND CAP/DIODE CARDS
+*
+Ri1	input#1	input	   10.2863	$mt1	$X=0.65 $Y=1.41
+Ri2	output	output#1	    0.1621	$mt1	$X=1.37 $Y=1.41
+Ri3	output#1	output#3	    0.2139	$mt1
++ $X=1.08 $Y=1.275
+Ri5	output#1	output#6	    0.3472	$mt1
++ $X=1.08 $Y=1.645
+Ri7	output#2	output#3	   15.0000	$mt1
++ $X=1.08 $Y=1.08
+Ri8	output#5	output#6	   15.0000	$mt1
++ $X=1.08 $Y=1.94
+Rj1	input#2	input#1	   33.6057	$poly
++ $X=0.8 $Y=1.695
+Rj2	input#1	input#3	   16.9390	$poly
++ $X=0.8 $Y=1.225
+*
+*       CAPACITOR CARDS
+*
+*
+C1	input	avC3	7.332E-17	$X=0.3225 $Y=1.4075
+C2	avC4	avC3	1.428E-16	$X=0.808 $Y=2.3585
+C3	input#2	avC3	5.571E-17	$X=0.7975 $Y=1.9355
+C4	input#3	avC3	4.438E-17	$X=0.7975 $Y=1.03
+C5	input#1	avC3	8.265E-17	$X=0.775 $Y=1.4325
+C6	output#2	avC3	2.477E-18	$X=1.0775 $Y=1.0775
+C7	output#1	avC3	8.355E-17	$X=1.3675 $Y=1.4075
+C8	output#3	avC3	3.142E-17	$X=1.0775 $Y=1.115
+C9	output#6	avC3	4.075E-17	$X=1.0775 $Y=1.85
+*
+*
+.ENDS inverter
+*

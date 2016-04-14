@@ -1,0 +1,52 @@
+********************************************************************************
+Product   : Virtuoso(R) XStream Out
+Program   : @(#)$CDS: strmout version 6.1.5-64b 12/12/2012 15:38 (sjfdl240) $
+          : sub-version  IC6.1.5-64b.500.15 
+Started at: 12-Apr-2016  16:50:33
+User Name : bkilberg
+Host Name : t7400-2.EECS.Berkeley.EDU
+Directory : /home/aa/users/bkilberg/ee240
+CADENCE Design Systems, Inc.
+********************************************************************************
+Info: Cellview Rev Num:99,  Tech Rev Num:59
+
+INFO (XSTRM-217): Reading the layer map file, /home/aa/users/bkilberg/ee240/EE247B_HW9/EE247B_HW9.layermap
+
+Summary of Options :
+library                                 EE247B_HW9
+strmFile                                EEC247B_MEC218_HW5_kilberg.gds
+topCell                                 nmosfolded
+view                                    layout
+logFile                                 strmOut.log
+techLib                                 EE247B_HW9
+layerMap                                /home/aa/users/bkilberg/ee240/EE247B_HW9/EE247B_HW9.layermap
+case                                    Preserve
+convertDot                              node
+
+INFO (XSTRM-223): 1. Translating cellView EE247B_HW9/nmosfolded/layout as STRUCTURE nmosfolded
+
+Summary of Objects Translated:
+	Scalar Instances:                       0
+	Array Instances:                        0
+	Polygons:                               0
+	Paths:                                  0
+	Rectangles:                             719
+	Lines:                                  0
+	Arcs:                                   0
+	Donuts:                                 0
+	Dots:                                   0
+	Ellipses:                               0
+	Boundaries:                             0
+	Area Blockages:                         0
+	Layer Blockages:                        0
+	Area Halos:                             0
+	Markers:                                0
+	Rows:                                   0
+	Standard Vias                           0
+	Custom Vias:                            0
+	Pathsegs:                               0
+	Text:                                   0
+	Cells:                                  1
+
+Elapsed Time: 0.8s   User Time: 0.4s   CPU Time: 0.1s   Peak VM: 368KB
+INFO (XSTRM-234): Translation completed. '0' error(s) and '0' warning(s) found.

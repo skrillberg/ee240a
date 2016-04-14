@@ -1,0 +1,18 @@
+# 4
+pmos1v(MOS): pmos1v(MOS)
+= D D B
+= G G B
+= S S B
+= B B B
+# 4
+nmos1v(MOS): nmos1v(MOS)
+= D D B
+= G G B
+= S S B
+= B B B
+# 4
+inverter schematic test: inverter layout test
+= gnd! avC3 I
+= vdda! avC4 I
+= input input B
+= output output B

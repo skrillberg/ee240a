@@ -1,0 +1,37 @@
+\o Program:		@(#)$CDS: cdsLibEditor version 6.1.5 - CAT32 10/23/2012 17:38 (cat91amd) $
+\o Sub version:		sub-version  s011 
+\o Arguments:		-display :50.0 -mpssession virtuoso24738 -mpshost t7400-2.EECS.Berkeley.EDU -namespace CDBA -cdslib /home/aa/users/bkilberg/ee240/cds.lib 
+\o Working Directory:	t7400-2.EECS.Berkeley.EDU:/home/aa/users/bkilberg/ee240
+\a nrSetWindowVisibility(cdsLibEditor "show")
+\o Qt version: 		4.5.3
+\a nrSetCurrentWindow(cdsLibEditor)
+\a nrListItemAction(cdsLibEditor->mainTable 0 0)
+\o Active cell: 0 0 "gpdk090"
+\a nrResizeWindow(cdsLibEditor list(-2 -22 500 400))
+\a nrListItemAction(cdsLibEditor->mainTable 9 0)
+\o Active cell: 9 0 "lab2"
+\a nrListItemAction(cdsLibEditor->mainTable 9 1)
+\o Active cell: 9 1 "/home/aa/users/bkilberg/ee240/lab2"
+\a cdsLibEditor->viewIncludeFilesButton->value = t
+\a nrResizeWindow(cdsLibEditor list(0 25 500 515))
+\a cdsLibEditor->viewLibInfoButton->value = t
+\a libInfoDialog->libInfoText->value = ""
+\a libInfoDialog->libInfoText->value = "Library:	lab2\nPath:		/home/aa/users/bkilberg/ee240/lab2\nFull Path:	/home/aa/users/bkilberg/ee240/lab2\nPath is valid?	Yes\n"
+\a libInfoDialog->libInfoText->value = "Library:	lab2\nPath:		/home/aa/users/bkilberg/ee240/lab2\nFull Path:	/home/aa/users/bkilberg/ee240/lab2\nPath is valid?	Yes\n\nDefined at line	11 in file /home/aa/users/bkilberg/ee240/cds.lib\n"
+\a nrSetWindowVisibility(libInfoDialog "show")
+\a nrSetCurrentWindow(libInfoDialog)
+\a nrResizeWindow(libInfoDialog list(100 168 300 150))
+\a libInfoDialog->closeButton->value = t
+\a cdsLibEditor->viewLibInfoButton->value = nil
+\a nrSetCurrentWindow(cdsLibEditor)
+\a libInfoDialog->libInfoText->value = ""
+\a libInfoDialog->libInfoText->value = "Library:	lab2\nPath:		/home/aa/users/bkilberg/ee240/lab2\nFull Path:	/home/aa/users/bkilberg/ee240/lab2\nPath is valid?	Yes\n"
+\a libInfoDialog->libInfoText->value = "Library:	lab2\nPath:		/home/aa/users/bkilberg/ee240/lab2\nFull Path:	/home/aa/users/bkilberg/ee240/lab2\nPath is valid?	Yes\n\nDefined at line	11 in file /home/aa/users/bkilberg/ee240/cds.lib\n"
+\a libInfoDialog->libInfoText->value = ""
+\a libInfoDialog->libInfoText->value = "Library:	lab2\nPath:		/home/aa/users/bkilberg/ee240/lab2\nFull Path:	/home/aa/users/bkilberg/ee240/lab2\nPath is valid?	Yes\n"
+\a libInfoDialog->libInfoText->value = "Library:	lab2\nPath:		/home/aa/users/bkilberg/ee240/lab2\nFull Path:	/home/aa/users/bkilberg/ee240/lab2\nPath is valid?	Yes\n\nDefined at line	11 in file /home/aa/users/bkilberg/ee240/cds.lib\n"
+\a libInfoDialog->libInfoText->value = ""
+\a libInfoDialog->libInfoText->value = "Library:	lab2\nPath:		/home/aa/users/bkilberg/ee240/lab2\nFull Path:	/home/aa/users/bkilberg/ee240/lab2\nPath is valid?	Yes\n"
+\a libInfoDialog->libInfoText->value = "Library:	lab2\nPath:		/home/aa/users/bkilberg/ee240/lab2\nFull Path:	/home/aa/users/bkilberg/ee240/lab2\nPath is valid?	Yes\n\nDefined at line	11 in file /home/aa/users/bkilberg/ee240/cds.lib\n"
+\a nrSetWindowVisibility(cdsLibEditor "hide")
+\a exit(0)

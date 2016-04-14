@@ -1,0 +1,7 @@
+Name,Type,Output,Plot,Save
+,terminal,/M1/D,t,t
+,terminal,/M0/D,t,t
+,terminal,/M2/D,t,t
+,terminal,/M3/D,t,t
+,terminal,/M2/S,,
+,terminal,/R0/PLUS,,

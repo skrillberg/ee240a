@@ -1,0 +1,36 @@
+@(#)$CDS: nvn_64 version av4.1:Production:dfII6.1.5-64b:IC6.1.5-64b.500.17 08/31/2015 04:54 (sjfql463) $
+sub-version 4.1_USR4_HF25, integ signature 2015-08-28-0751
+run on t7400-5.EECS.Berkeley.EDU at Tue Feb 16 17:33:45 2016
+
+Schematic                  | Layout                  | Status
+-------------------------------------------------------------------------------
+inverter schematic test    | inverter layout test    | parameter errors      *
+
+Mismatch between Schematic and Layout
+   1 cell matched with parameter errors
+
+Schematic:
+  Library:test
+  Cell   :inverter
+  View   :schematic
+
+Layout:
+  Library:test
+  Cell   :inverter
+  View   :layout
+
+
+
+Extraction  Information
+--------------------
+     0 cells have 0 mal-formed device problems
+     0 cells have 0 label short problems
+     0 cells have 0 label open problems
+
+Mismatch  Information
+--------------------
+     0 cells have 0 Net mismatches
+     0 cells have 0 Device mismatches
+     0 cells have 0 Pin mismatches
+     1 cells have 2 Parameter mismatches
+
